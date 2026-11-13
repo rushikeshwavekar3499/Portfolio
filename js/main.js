@@ -84,13 +84,13 @@
         <div class="footer__h">Navigation</div>
         <div class="footer__c"><a href="index.html">Index</a><a href="work.html">Work</a><a href="about.html">About</a><a href="#contact" data-scroll-top="0">Contact</a></div>
         <div class="footer__h">Media</div>
-        <div class="footer__c"><a href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:${PROFILE.email}">Email</a><a href="tel:${PROFILE.phoneLink}">Phone</a></div>
+        <div class="footer__c"><a href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:${PROFILE.email}">Email</a>${PROFILE.phones.map((p) => `<a href="tel:${p.link}">Phone (${p.label})</a>`).join('')}</div>
         <div class="footer__h">Based</div>
-        <div class="footer__c"><span>Mumbai</span><span>Maharashtra</span><span>India</span></div>
+        <div class="footer__c"><span>Business Bay</span><span>Dubai</span><span>UAE</span></div>
         <div class="footer__cta">
           <a class="footer__hello" href="mailto:${PROFILE.email}">Let’s build<br><em>something.</em></a>
           <div class="contact">
-            <a class="contact__item" href="tel:${PROFILE.phoneLink}"><small>Phone</small><span>${PROFILE.phone}</span></a>
+            ${PROFILE.phones.map((p) => `<a class="contact__item" href="tel:${p.link}"><small>Phone · ${p.label}</small><span>${p.display}</span></a>`).join('')}
             <a class="contact__item" href="mailto:${PROFILE.email}"><small>Email</small><span>${PROFILE.email}</span></a>
           </div>
         </div>
@@ -143,7 +143,7 @@
 
     <section class="intro grid">
       <dl class="facts" data-reveal>
-        <dt>Based</dt><dd>Mumbai, India</dd>
+        <dt>Based</dt><dd>Business Bay, Dubai</dd>
         <dt>Practice</dt><dd>Since ${PROFILE.since}</dd>
         <dt>Currently</dt><dd>Architect,<br>${PROFILE.current}</dd>
         <dt>Focus</dt><dd>${PROFILE.sectors.join(', ')}</dd>
@@ -574,7 +574,7 @@
           <dt>Title</dt><dd>${PROFILE.title}</dd>
           <dt>Based</dt><dd>${PROFILE.location}</dd>
           <dt>Languages</dt><dd>${EXTRAS.Languages.join(', ')}</dd>
-          <dt>Phone</dt><dd><a class="u" href="tel:${PROFILE.phoneLink}">${PROFILE.phone}</a></dd>
+          <dt>Phone</dt><dd>${PROFILE.phones.map((p) => `<a class="u" href="tel:${p.link}">${p.display}</a> <span class="muted">(${p.label})</span>`).join('<br>')}</dd>
           <dt>Email</dt><dd><a class="u" href="mailto:${PROFILE.email}">${PROFILE.email}</a></dd>
           <dt>LinkedIn</dt><dd><a class="u" href="${PROFILE.linkedin}" target="_blank" rel="noopener">rushikesh-wavekar</a></dd>
         </dl>
