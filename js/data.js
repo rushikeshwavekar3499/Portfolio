@@ -11,7 +11,7 @@ const PROFILE = {
   location: 'Business Bay, Dubai, UAE',
   email: 'rushikesh.wavekar3499@gmail.com',
   phones: [
-    { label: 'UAE', display: '+971 56 615 5815', link: '+971566155815' },
+    { label: 'UAE', display: '+971 50 208 4506', link: '+971502084506' },
     { label: 'India', display: '+91 88795 19110', link: '+918879519110' },
   ],
   linkedin: 'https://www.linkedin.com/in/rushikesh-wavekar',
