@@ -16,7 +16,7 @@ const PROFILE = {
   ],
   linkedin: 'https://www.linkedin.com/in/rushikesh-wavekar',
   since: '2021',
-  current: 'Talati & Partners LLP',
+  current: 'Open to Architect / Project Architect roles in Dubai',
   statement:
     'A Dubai-based architect working across residential, commercial and hospitality projects — from concept and elevation design to working drawings and on-site execution. I care about how design intent survives the journey to built reality: the detail, the coordination, the craft.',
   intro: 'Architectural design, project coordination, interior design, working drawings and site execution.',
@@ -26,7 +26,7 @@ const PROFILE = {
 };
 
 const EXPERIENCE = [
-  { role: 'Architect', company: 'Talati & Partners LLP', period: 'Jan 2026 — Present', place: 'Mumbai',
+  { role: 'Architect', company: 'Talati & Partners LLP', period: 'Jan 2026 — Sep 2026', place: 'Mumbai',
     points: ['High-rise residential presentations, 3D modelling, structural elevations and floor plan development.', 'AI-based rendering, client coordination and stack chart analysis.'] },
   { role: 'Project Manager', company: 'Design Oltre Orizzonte', period: 'Aug 2024 — Nov 2025', place: 'Mumbai',
     points: ['Project Manager — ICONIQA 5-Star Hotel, 35,000 sq.ft. near Mumbai International Airport.', 'Led on-site execution, design coordination, MEP resolution, timelines and reworks.'] },

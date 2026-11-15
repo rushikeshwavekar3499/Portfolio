@@ -145,7 +145,7 @@
       <dl class="facts" data-reveal>
         <dt>Based</dt><dd>Business Bay, Dubai</dd>
         <dt>Practice</dt><dd>Since ${PROFILE.since}</dd>
-        <dt>Currently</dt><dd>Architect,<br>${PROFILE.current}</dd>
+        <dt>Currently</dt><dd>${PROFILE.current}</dd>
         <dt>Focus</dt><dd>${PROFILE.sectors.join(', ')}</dd>
       </dl>
       <p class="intro__text serif" data-reveal>${PROFILE.statement}<span class="accent-rule"></span></p>
