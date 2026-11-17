@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revit BIM Model — Rushikesh Wavekar</title>
+  <meta name="description" content="A 41-level residential tower in Revit: the full architectural BIM model, with custom and nested parametric families by Rushikesh Wavekar.">
+  <script>try{var t=localStorage.getItem('rw-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter+Tight:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .rv{padding:140rem var(--pad) 80rem}
+    .rv__lab{font:500 13rem/1.3 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 18rem}
+    .rv h1{font:500 64rem/1.02 var(--sans);letter-spacing:-.02em;margin:0 0 28rem;max-width:1000rem}
+    .rv__lead{font:400 21rem/1.5 var(--serif);max-width:760rem;margin:0 0 60rem}
+    .rv__stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-bottom:100rem}
+    .rv__stat{padding:22rem 0;border-bottom:1px solid var(--line)}
+    .rv__stat b{display:block;font:500 40rem/1 var(--sans);margin-bottom:8rem}
+    .rv__stat span{font:400 14rem/1.3 var(--ui);color:var(--muted)}
+    .rv h2{font:500 32rem/1.1 var(--sans);margin:0 0 10rem}
+    .rv__sec{margin-bottom:110rem}
+    .rv__note{font:400 16rem/1.5 var(--ui);color:var(--muted);max-width:720rem;margin:0 0 32rem}
+    .rv__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+    .rv__grid--4{grid-template-columns:repeat(4,1fr)}
+    .rv__fig{margin:0;cursor:zoom-in}
+    .rv__fig .ph{background:#fff;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:14rem;border:1px solid var(--line)}
+    .rv__fig img{max-width:100%;max-height:100%;object-fit:contain}
+    .rv__fig figcaption{font:500 14rem/1.35 var(--ui);margin-top:10rem}
+    .rv__fig small{display:block;font:400 13rem/1.4 var(--ui);color:var(--muted);margin-top:4rem}
+    .rv__tag{display:inline-block;font:500 11rem/1 var(--ui);text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--accent);color:var(--hover);padding:4rem 6rem;margin-top:6rem}
+    .rv__wide{margin-bottom:var(--gap)}
+    .rv__wide .ph{aspect-ratio:auto;padding:0;border:0}
+    .rv__fig .ph img[src*="vw_"]{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}
+    .rv__fig:has(img[src*="vw_"]) .ph{padding:0;border:0}
+    .rv__pairs{display:grid;grid-template-columns:1fr 1fr;gap:40rem var(--gap)}
+    .rv__pair{display:grid;grid-template-columns:1fr 2fr;gap:12rem}
+    .rv__pair .ph{aspect-ratio:4/3}
+    @media (max-width:767px){.rv__pairs{grid-template-columns:1fr}}
+    .rv__grid--5{grid-template-columns:repeat(5,1fr)}
+    .rv__soft .rv__fig .ph{background:#f3f2ef;border:0;padding:24rem}
+    .rv__soft .rv__fig img{mix-blend-mode:multiply;opacity:.85}
+    .rv__soft .rv__fig figcaption{font-weight:400;font-size:13rem}
+    .rv__soft .rv__fig small{font-size:12rem}
+    .rv__soft .rv__grid--5 .ph{aspect-ratio:3/4}
+    .rv__levels{font:400 14rem/1.5 var(--ui);columns:3;column-gap:var(--gap);border-top:1px solid var(--line);padding-top:18rem}
+    .rv__levels div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:5rem 0;break-inside:avoid}
+    .rv__levels span{color:var(--muted)}
+    .rv__box{position:fixed;inset:0;background:var(--overlay);z-index:200;display:none;align-items:center;justify-content:center;padding:40rem;cursor:zoom-out}
+    .rv__box.on{display:flex}
+    .rv__box img{max-width:100%;max-height:100%;background:#fff}
+    @media (max-width:767px){.rv h1{font-size:38rem}.rv__stats{grid-template-columns:repeat(2,1fr)}.rv__grid,.rv__grid--4{grid-template-columns:1fr 1fr}.rv__levels{columns:1}}
+  </style>
+</head>
+<body data-page="revit">
+  <main id="rv"></main>
+  <div class="rv__box" id="rvbox"><img alt=""></div>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/revit-data.js"></script>
+  <script src="js/revit.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
