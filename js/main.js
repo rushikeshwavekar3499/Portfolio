@@ -23,7 +23,7 @@
 
   /* ---------- header / footer ---------- */
   function header() {
-    const links = [['index.html', 'Index', 'home'], ['work.html', 'Work', 'work'], ['about.html', 'About', 'about'], ['index.html#contact', 'Contact', 'contact']];
+    const links = [['index.html', 'Index', 'home'], ['work.html', 'Work', 'work'], ['revit.html', 'BIM', 'revit'], ['about.html', 'About', 'about'], ['index.html#contact', 'Contact', 'contact']];
     const active = page === 'project' ? 'work' : page;
     const h = document.createElement('header');
     h.className = 'header';
